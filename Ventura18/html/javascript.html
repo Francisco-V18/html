@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript - Documentación Web</title>
+    <link rel="stylesheet" href="../Css/style.css">
+</head>
+<body>
+
+<header>
+    <a href="../index.html"><h1>JavaScript</h1></a>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="Etiquetas.html">Etiquetas</a></li>
+            <li><a href="Atributos.html">Atributos</a></li>
+            <li><a href="Css.html">CSS</a></li>
+            <li><a href="Javascript.html" style="font-weight:bold;">JavaScript</a></li>
+            <li><a href="Acercade.html">Acerca de</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <h2>Preguntas y respuestas sobre JavaScript</h2>
+
+    <h3>1. ¿Qué es JavaScript?</h3>
+    <p>
+        JavaScript es un lenguaje de programación que permite agregar interacción, dinamismo y lógica a las páginas web.
+        Es un lenguaje que el navegador ejecuta para realizar acciones avanzadas, como mover elementos, validar formularios,
+        mostrar mensajes, animar objetos o crear aplicaciones completas.
+    </p>
+
+    <h3>2. ¿Para qué sirve JavaScript en una página web?</h3>
+    <p>JavaScript sirve para agregar comportamiento al sitio. Con él podemos:</p>
+
+    <ul>
+        <li>Validar formularios</li>
+        <li>Crear animaciones y efectos</li>
+        <li>Modificar texto, imágenes y estilos al instante</li>
+        <li>Crear calculadoras, chats y juegos</li>
+        <li>Interactuar con bases de datos usando APIs</li>
+        <li>Manejar eventos como clics, teclas y movimientos</li>
+    </ul>
+
+    <h3>3. ¿Dónde se escribe JavaScript?</h3>
+    <ul>
+        <li><strong>En línea:</strong> dentro de un elemento HTML</li>
+        <li><strong>Interno:</strong> dentro de &lt;script&gt; en el mismo archivo HTML</li>
+        <li><strong>Externo:</strong> en un archivo .js (la forma más recomendada)</li>
+    </ul>
+
+    <h3>4. ¿Cómo funciona JavaScript?</h3>
+    <p>
+        JavaScript se ejecuta gracias a un motor del navegador (como V8 o SpiderMonkey).  
+        Este motor lee el código línea por línea, interpreta las instrucciones y modifica el HTML o CSS según las órdenes del script.
+        Con el DOM (Document Object Model) puede cambiar cualquier parte de la página.
+    </p>
+
+    <h3>5. ¿JavaScript puede modificar HTML en tiempo real?</h3>
+    <p>
+        Sí. JavaScript puede cambiar textos, imágenes, botones, añadir elementos nuevos o eliminarlos.  
+        Esto lo logra a través del DOM, accediendo a los elementos por id, clase o etiqueta.
+    </p>
+
+    <br>
+
+    <h2>Tabla de comandos básicos de JavaScript</h2>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Comando</th>
+            <th>Descripción</th>
+            <th>Ejemplo</th>
+        </tr>
+
+        <tr>
+            <td><strong>console.log()</strong></td>
+            <td>Muestra información en la consola</td>
+            <td>console.log("Hola");</td>
+        </tr>
+
+        <tr>
+            <td><strong>alert()</strong></td>
+            <td>Muestra una ventana emergente</td>
+            <td>alert("Bienvenido");</td>
+        </tr>
+
+        <tr>
+            <td><strong>document.getElementById()</strong></td>
+            <td>Selecciona un elemento por su ID</td>
+            <td>document.getElementById("titulo");</td>
+        </tr>
+
+        <tr>
+            <td><strong>innerHTML</strong></td>
+            <td>Cambia el contenido de un elemento</td>
+            <td>titulo.innerHTML = "Nuevo texto";</td>
+        </tr>
+
+        <tr>
+            <td><strong>addEventListener()</strong></td>
+            <td>Detecta eventos como clics o teclas</td>
+            <td>boton.addEventListener("click", accion);</td>
+        </tr>
+    </table>
+
+    <br><hr><br>
+
+    <h2>Preguntas sobre HTML y su funcionamiento</h2>
+
+    <h3>1. ¿Qué es HTML y por qué es importante?</h3>
+    <p>
+        HTML es el lenguaje que crea la estructura de una página web.  
+        Organiza textos, imágenes, botones, formularios y todo el contenido visible.  
+        Sin HTML, los navegadores no podrían mostrar correctamente una página.
+    </p>
+
+    <h3>2. ¿Qué son las etiquetas HTML?</h3>
+    <p>
+        Las etiquetas son bloques de código que indican qué tipo de contenido se está mostrando:
+        título, párrafo, tabla, imagen, encabezado, sección, etc.
+    </p>
+
+    <h3>3. ¿Cómo trabajan juntos HTML, CSS y JavaScript?</h3>
+    <p>
+        HTML estructura la información, CSS la diseña y JavaScript le da interacción.
+        Los tres lenguajes son la base del desarrollo web moderno.
+    </p>
+
+    <h3>4. ¿Qué es el DOM?</h3>
+    <p>
+        El DOM (Document Object Model) es una representación del HTML que JavaScript utiliza para leer,
+        modificar o eliminar cualquier elemento de la página.
+    </p>
+
+    <br><hr><br>
+
+    <h2>Tabla de etiquetas HTML importantes</h2>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Etiqueta</th>
+            <th>Función</th>
+            <th>Ejemplo</th>
+        </tr>
+
+        <tr>
+            <td>&lt;p&gt;</td>
+            <td>Define un párrafo</td>
+            <td>&lt;p&gt;Texto&lt;/p&gt;</td>
+        </tr>
+
+        <tr>
+            <td>&lt;img&gt;</td>
+            <td>Muestra una imagen</td>
+            <td>&lt;img src="foto.png"&gt;</td>
+        </tr>
+
+        <tr>
+            <td>&lt;a&gt;</td>
+            <td>Crea un enlace</td>
+            <td>&lt;a href="index.html"&gt;Ir&lt;/a&gt;</td>
+        </tr>
+
+        <tr>
+            <td>&lt;form&gt;</td>
+            <td>Crea un formulario</td>
+            <td>&lt;form&gt;...&lt;/form&gt;</td>
+        </tr>
+
+        <tr>
+            <td>&lt;table&gt;</td>
+            <td>Crea una tabla</td>
+            <td>&lt;table&gt;...&lt;/table&gt;</td>
+        </tr>
+    </table>
+
+</main>
+
+<footer>
+    <p>© 2025 Francisco Ventura</p>
+</footer>
+
+</body>
+</html>

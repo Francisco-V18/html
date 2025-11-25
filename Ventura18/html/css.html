@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS - Documentación Web</title>
+    <link rel="stylesheet" href="../Css/style.css">
+</head>
+<body>
+
+<header>
+    <a href="../index.html"><h1>CSS</h1></a>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="Etiquetas.html">Etiquetas</a></li>
+            <li><a href="Atributos.html">Atributos</a></li>
+            <li><a href="Css.html" style="font-weight:bold;">CSS</a></li>
+            <li><a href="Javascript.html">JavaScript</a></li>
+            <li><a href="Acercade.html">Acerca de</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <h2>Preguntas y respuestas sobre CSS</h2>
+
+    <h3>1. ¿Qué es CSS?</h3>
+    <p>
+        CSS (Cascading Style Sheets) es el lenguaje que controla la presentación visual de un sitio web.
+        Permite modificar colores, tamaños, márgenes, posiciones, fondos, tipografías y prácticamente
+        cualquier aspecto del diseño de una página. Mientras HTML estructura el contenido,
+        CSS transforma esa estructura en un diseño atractivo y profesional.
+    </p>
+
+    <h3>2. ¿Para qué sirve CSS?</h3>
+    <p>CSS sirve para:</p>
+
+    <ul>
+        <li>Dar estilo a los elementos HTML</li>
+        <li>Cambiar colores, tamaños, alineaciones y formas</li>
+        <li>Crear diseños adaptables a celulares (responsive)</li>
+        <li>Aplicar animaciones y transiciones</li>
+        <li>Separar el diseño de la estructura para un código más limpio</li>
+        <li>Crear interfaces modernas y profesionales</li>
+    </ul>
+
+    <h3>3. ¿Cómo funciona CSS?</h3>
+    <p>
+        CSS funciona mediante reglas que afectan elementos HTML.
+        Estas reglas se aplican siguiendo el principio del “cascading” (cascada):
+        si dos estilos afectan un mismo elemento, el navegador aplica el más específico o el último declarado.
+        Cada regla tiene un selector, propiedades y valores.
+    </p>
+
+    <h3>4. ¿Dónde se coloca CSS?</h3>
+    <ul>
+        <li><strong>CSS en línea:</strong> dentro de una etiqueta HTML usando “style”.</li>
+        <li><strong>CSS interno:</strong> dentro de la etiqueta &lt;style&gt; en el &lt;head&gt;.</li>
+        <li><strong>CSS externo:</strong> en un archivo .css independiente (forma profesional).</li>
+    </ul>
+
+    <h3>5. ¿Qué son los selectores en CSS?</h3>
+    <p>
+        Los selectores sirven para elegir qué elementos serán modificados.  
+        Hay selectores por etiqueta, clase, id, atributo, estado (hover), descendencia y más.
+    </p>
+
+    <h3>6. ¿Cuál es la diferencia entre clase e id?</h3>
+    <p>
+        <strong>class:</strong> se puede usar muchas veces.  
+        <strong>id:</strong> solo una vez por página.  
+        class = estilo, id = identificación.
+    </p>
+
+    <hr><br>
+
+    <h2>Tabla de propiedades CSS más utilizadas</h2>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Propiedad</th>
+            <th>Función</th>
+            <th>Ejemplo</th>
+        </tr>
+
+        <tr>
+            <td><strong>color</strong></td>
+            <td>Cambia el color del texto</td>
+            <td>color: red;</td>
+        </tr>
+
+        <tr>
+            <td><strong>background-color</strong></td>
+            <td>Establece un color de fondo</td>
+            <td>background-color: blue;</td>
+        </tr>
+
+        <tr>
+            <td><strong>font-size</strong></td>
+            <td>Define el tamaño del texto</td>
+            <td>font-size: 20px;</td>
+        </tr>
+
+        <tr>
+            <td><strong>margin</strong></td>
+            <td>Agrega espacio externo</td>
+            <td>margin: 15px;</td>
+        </tr>
+
+        <tr>
+            <td><strong>padding</strong></td>
+            <td>Agrega espacio interno</td>
+            <td>padding: 10px;</td>
+        </tr>
+
+        <tr>
+            <td><strong>border</strong></td>
+            <td>Añade un borde</td>
+            <td>border: 1px solid black;</td>
+        </tr>
+
+        <tr>
+            <td><strong>text-align</strong></td>
+            <td>Alinea el texto</td>
+            <td>text-align: center;</td>
+        </tr>
+
+        <tr>
+            <td><strong>display</strong></td>
+            <td>Cambia el comportamiento del elemento</td>
+            <td>display: flex;</td>
+        </tr>
+    </table>
+
+    <br><hr><br>
+
+    <h2>Preguntas sobre HTML, CSS y su relación</h2>
+
+    <h3>1. ¿HTML puede funcionar sin CSS?</h3>
+    <p>
+        Sí, pero se vería simple y sin estilo. CSS hace que una página luzca moderna, limpia y atractiva.
+    </p>
+
+    <h3>2. ¿CSS puede modificar elementos HTML?</h3>
+    <p>
+        No modifica la estructura, pero sí cambia completamente la apariencia visual de esos elementos.
+    </p>
+
+    <h3>3. ¿Qué pasa si dos estilos afectan al mismo elemento?</h3>
+    <p>
+        El navegador aplica el estilo que tenga mayor especificidad o el que se encuentre más abajo en la cascada.
+    </p>
+
+    <h3>4. ¿Qué es responsive design?</h3>
+    <p>
+        Es la capacidad de una página para adaptarse a celulares, tablets y computadoras usando CSS
+        (con flexbox, grid y media queries).
+    </p>
+
+    <h3>5. ¿Cuál es la diferencia entre HTML, CSS y JavaScript?</h3>
+    <p>
+        HTML = estructura  
+        CSS = diseño  
+        JavaScript = interacción  
+        Juntos forman cualquier sitio moderno.
+    </p>
+
+    <br><hr><br>
+
+    <h2>Tabla de selectores CSS</h2>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Selector</th>
+            <th>Función</th>
+            <th>Ejemplo</th>
+        </tr>
+
+        <tr>
+            <td>Etiqueta</td>
+            <td>Selecciona todos los elementos con ese nombre</td>
+            <td>p { color: red; }</td>
+        </tr>
+
+        <tr>
+            <td>.clase</td>
+            <td>Selecciona elementos con esa clase</td>
+            <td>.titulo { font-size: 30px; }</td>
+        </tr>
+
+        <tr>
+            <td>#id</td>
+            <td>Selecciona un elemento único</td>
+            <td>#principal { background: blue; }</td>
+        </tr>
+
+        <tr>
+            <td>selector:hover</td>
+            <td>Estilo cuando el cursor pasa por encima</td>
+            <td>a:hover { color: green; }</td>
+        </tr>
+
+        <tr>
+            <td>div p</td>
+            <td>Selecciona elementos dentro de otro</td>
+            <td>div p { font-weight: bold; }</td>
+        </tr>
+    </table>
+
+    <br>
+
+</main>
+
+<footer>
+    <p>© 2025 Documentación Web</p>
+</footer>
+
+</body>
+</html>

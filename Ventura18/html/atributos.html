@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Atributos HTML - Documentación Web</title>
+    <link rel="stylesheet" href="../Css/style.css">
+</head>
+<body>
+
+<header>
+    <a href="../index.html"><h1>Atributos HTML</h1></a>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="Etiquetas.html">Etiquetas</a></li>
+            <li><a href="Atributos.html" style="font-weight:bold;">Atributos</a></li>
+            <li><a href="Css.html">CSS</a></li>
+            <li><a href="Javascript.html">JavaScript</a></li>
+            <li><a href="Acercade.html">Acerca de</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <h2>Preguntas y respuestas sobre Atributos en HTML</h2>
+
+    <h3>1. ¿Qué es un atributo en HTML?</h3>
+    <p>
+        Un atributo es información adicional que se añade dentro de una etiqueta HTML para modificar
+        su comportamiento, apariencia o funcionamiento.  
+        Los atributos van dentro de la etiqueta de apertura y están formados por un nombre y un valor.
+    </p>
+
+    <h3>2. ¿Para qué sirven los atributos?</h3>
+    <p>Sirven para definir características específicas de los elementos HTML, como:</p>
+
+    <ul>
+        <li>Identificarlos (id)</li>
+        <li>Añadir estilos (class)</li>
+        <li>Definir enlaces (href)</li>
+        <li>Modificar imágenes (src, width, height)</li>
+        <li>Controlar formularios (required, placeholder, disabled)</li>
+        <li>Establecer comportamiento especial (target, autoplay, loop)</li>
+    </ul>
+
+    <h3>3. ¿Cómo se escriben los atributos?</h3>
+    <p>
+        Se escriben dentro de la etiqueta de apertura y tienen el formato:
+    </p>
+
+    <pre>&lt;etiqueta atributo="valor"&gt;</pre>
+
+    <h3>4. ¿HTML puede funcionar sin atributos?</h3>
+    <p>
+        Sí, pero sería muy limitado.  
+        Los atributos permiten que los elementos tengan funcionalidades reales.
+    </p>
+
+    <h3>5. ¿Los atributos son iguales en todas las etiquetas?</h3>
+    <p>
+        No.  
+        Algunos atributos son globales (sirven para cualquier etiqueta),  
+        mientras que otros son especiales y solo sirven para ciertos elementos.
+    </p>
+
+    <hr><br>
+
+    <h2>1.- Atributos Globales</h2>
+    <p>Los atributos globales funcionan en cualquier etiqueta HTML.</p>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Atributo</th>
+            <th>Función</th>
+            <th>Ejemplo</th>
+        </tr>
+
+        <tr>
+            <td><strong>id</strong></td>
+            <td>Identifica un elemento único</td>
+            <td>&lt;p id="texto1"&gt;Contenido&lt;/p&gt;</td>
+        </tr>
+
+        <tr>
+            <td><strong>class</strong></td>
+            <td>Aplica estilos a varios elementos</td>
+            <td>&lt;div class="caja"&gt;&lt;/div&gt;</td>
+        </tr>
+
+        <tr>
+            <td><strong>style</strong></td>
+            <td>Agrega estilos en línea</td>
+            <td>&lt;p style="color:red"&gt;Hola&lt;/p&gt;</td>
+        </tr>
+
+        <tr>
+            <td><strong>title</strong></td>
+            <td>Muestra un texto al pasar el cursor</td>
+            <td>&lt;img title="Imagen bonita"&gt;</td>
+        </tr>
+
+        <tr>
+            <td><strong>hidden</strong></td>
+            <td>Oculta un elemento</td>
+            <td>&lt;div hidden&gt;No visible&lt;/div&gt;</td>
+        </tr>
+    </table>
+
+    <br><hr><br>
+
+    <h2>2.- Atributos de Formularios</h2>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Atributo</th>
+            <th>Función</th>
+            <th>Ejemplo</th>
+        </tr>
+
+        <tr>
+            <td><strong>action</strong></td>
+            <td>Define dónde se enviarán los datos</td>
+            <td>&lt;form action="guardar.php"&gt;</td>
+        </tr>
+
+        <tr>
+            <td><strong>method</strong></td>
+            <td>Método de envío (GET o POST)</td>
+            <td>&lt;form method="post"&gt;</td>
+        </tr>
+
+        <tr>
+            <td><strong>autocomplete</strong></td>
+            <td>Activa o desactiva autocompletado</td>
+            <td>&lt;form autocomplete="off"&gt;</td>
+        </tr>
+
+        <tr>
+            <td><strong>target</strong></td>
+            <td>Abre el resultado en nueva ventana</td>
+            <td>&lt;form target="_blank"&gt;</td>
+        </tr>
+    </table>
+
+    <br><hr><br>
+
+    <h2>3.- Atributos de Input</h2>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Atributo</th>
+            <th>Función</th>
+            <th>Ejemplo</th>
+        </tr>
+
+        <tr>
+            <td><strong>type</strong></td>
+            <td>Define el tipo de dato</td>
+            <td>&lt;input type="email"&gt;</td>
+        </tr>
+
+        <tr>
+            <td><strong>placeholder</strong></td>
+            <td>Texto guía dentro del campo</td>
+            <td>&lt;input placeholder="Escribe tu nombre"&gt;</td>
+        </tr>
+
+        <tr>
+            <td><strong>required</strong></td>
+            <td>Campo obligatorio</td>
+            <td>&lt;input required&gt;</td>
+        </tr>
+
+        <tr>
+            <td><strong>value</strong></td>
+            <td>Valor predefinido</td>
+            <td>&lt;input value="Dominicana"&gt;</td>
+        </tr>
+
+        <tr>
+            <td><strong>disabled</strong></td>
+            <td>Desactiva el campo</td>
+            <td>&lt;input disabled&gt;</td>
+        </tr>
+
+        <tr>
+            <td><strong>maxlength</strong></td>
+            <td>Máximo de caracteres</td>
+            <td>&lt;input maxlength="10"&gt;</td>
+        </tr>
+    </table>
+
+    <br><hr><br>
+
+    <h2>Preguntas adicionales sobre Atributos</h2>
+
+    <h3>1. ¿Qué pasa si un atributo no tiene valor?</h3>
+    <p>Algunos atributos funcionan sin valor (ej: <strong>required</strong>, <strong>hidden</strong>).</p>
+
+    <h3>2. ¿Puedo usar varios atributos en una misma etiqueta?</h3>
+    <p>Claro, y es lo más normal. Ejemplo:</p>
+
+    <pre>&lt;input type="text" placeholder="Nombre" required maxlength="20"&gt;</pre>
+
+    <h3>3. ¿Los atributos distinguen entre mayúsculas y minúsculas?</h3>
+    <p>No, pero por convención se escriben en minúsculas.</p>
+
+</main>
+
+<footer>
+    <p>© 2025 Francisco Ventura</p>
+</footer>
+
+</body>
+</html>
